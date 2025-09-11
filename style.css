@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  background-color: lightcyan;
+  border-bottom: 3px solid #ccc;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: teal;
+}
+
+.user i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Menu toggle (hidden by default) */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Images */
+.image {
+ background-color: lightslategray;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive (Mobile View) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: lightcyan;
+    flex-direction: column;
+    width: 200px;
+    text-align: right;
+    padding: 20px;
+    border-left: 3px solid #ccc;
+  }
+
+  /* Show nav when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-style: oblique;
+    text-align: center;
+}
