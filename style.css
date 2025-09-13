@@ -55,16 +55,6 @@
   cursor: pointer;
 }
 
-/* Images */
-.image {
- background-color: lightslategray;
-}
-
-.image img {
-  width: 100%;
-  height: 100%;
-}
-
 /* Responsive (Mobile View) */
 @media (max-width: 768px) {
   .nav-links {
@@ -88,10 +78,6 @@
   .menu-icon {
     display: block;
   }
-}
-img{
-    width: 100%;
-    height: 100%;
 }
 h1{
     font-style: oblique;
